@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class=" border w-[100dvw] h-[100dvh] flex flex-col items-center justify-center">
+    
+
+    <form method="post" class=" border flex flex-col w-[300px] h-[400px] justify-between p-2 ">
+        <div class=" text-center text-xl font-bold text-[crimson]">
+        <h1>Register</h1>
+    </div>
+        <input class="border p-2 outline-none" type="text" name="uname" placeholder="Enter Your name" required>
+        <input class="border p-2 outline-none" type="email" name="uemail" placeholder="Enter your Email" required>
+        <input class="border p-2 outline-none" type="text" name="umobile" placeholder="Enter your Mobile" required>
+        <input class="border p-2 outline-none" type="password" name="upass" placeholder="Enter Your Password" required>
+        <button class="border py-[5px] bg-[crimson] text-white" type="submit">Register</button>
+    </form>
+
+</div>
+
+    
+    
+{% endblock %}
